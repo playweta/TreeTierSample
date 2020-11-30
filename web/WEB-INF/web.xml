@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+           version="2.5">
+
+    <welcome-file-list>
+        <welcome-file>QueryStudentByPage</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <servlet-name>AddStudentServlet</servlet-name>
+        <servlet-class>org.student.servlet.AddStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddStudentServlet</servlet-name>
+        <url-pattern>/AddStudentServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>DeleteStudentServlet</servlet-name>
+        <servlet-class>org.student.servlet.DeleteStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteStudentServlet</servlet-name>
+        <url-pattern>/DeleteStudentServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>UpdateStudentServlet</servlet-name>
+        <servlet-class>org.student.servlet.UpdateStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateStudentServlet</servlet-name>
+        <url-pattern>/UpdateStudentServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>QueryStudentBySnoServlet</servlet-name>
+        <servlet-class>org.student.servlet.QueryStudentBySnoServlet</servlet-class>
+    </servlet>
+   <servlet-mapping>
+        <servlet-name>QueryStudentBySnoServlet</servlet-name>
+        <url-pattern>/QueryStudentBySnoServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>QueryAllStudentsServlet</servlet-name>
+        <servlet-class>org.student.servlet.QueryAllStudentsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QueryAllStudentsServlet</servlet-name>
+        <url-pattern>/QueryAllStudentsServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>QueryStudentByPage</servlet-name>
+        <servlet-class>org.student.servlet.QueryStudentByPage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QueryStudentByPage</servlet-name>
+        <url-pattern>/QueryStudentByPage</url-pattern>
+    </servlet-mapping>
+</web-app>
+
